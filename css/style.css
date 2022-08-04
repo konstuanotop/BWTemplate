@@ -100,6 +100,8 @@ h6 {
 }
 
 .intro__subtitle {
+    margin: 0;
+
     font-family: 'Merriweather', serif;
     font-size: 16px;
     font-weight: 400;
@@ -443,8 +445,8 @@ h6 {
 .services__icon {
     margin: 0 auto 40px;
 
-    width: 175px;
-    height: 175px;
+    width: 172px;
+    height: 172px;
 }
 
 .services__info {
@@ -576,8 +578,8 @@ h6 {
 .input,
 .textarea {
     display: block;
-    padding: 16px 0;
-    width: 768px;
+    padding: 16px 20px;
+    width: 100%;
 
     background-color: #fff;
     border: 1px solid #999999;
@@ -599,10 +601,6 @@ h6 {
     text-align: center;
 }
 
-.textarea::placeholder {
-    padding-left: 20px;
-}
-
 .input:focus,
 .textarea:focus {
     outline: none;
@@ -614,7 +612,7 @@ h6 {
     margin-top: 0;
     padding: 17px 0 15px;
 
-    width: 770px;
+    width: 100%;
 
     text-align: center;
     font-family: "Helvetica";
@@ -633,12 +631,239 @@ h6 {
     text-align: center;
 }
 
-.footer p {
+.footer__copyright {
     font-family: "Helvetica";
     font-style: light;
     font-weight: 300;
     color: #3b3b3b;
 }
-/* 
-@media (max-width: 1200px
+
+
+
+@media (max-width: 1230px) {
+
+    /* Intro */
+    .intro__title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    /* Intro */
+
+    .intro__title {
+        font-size: 30px;
+    }
+
+    /* Services */
+
+    .services__item {
+        max-width: 250px;
+    }
+
+    /* About */
+
+    .about-line {
+        display: none;
+    }
+
+    .about__inner {
+        margin-bottom: 40px;
+    }
+
+    .about__years-right {
+        justify-content: left;
+    }
+
+    .about__year-2012,
+    .about__year-2014 {
+        position: relative;
+
+        text-align: right;
+    }
+
+    .about__year-2012:before,
+    .about__year-2014:before {
+        display: none;
+    }
+
+    .about__year-2012:after,
+    .about__year-2014:after {
+        content: "";
+        position: absolute;
+        right: -85px;
+
+        width: 14px;
+        height: 14px;
+
+        background-color: #1d1d1d;
+
+        border: 5px solid #fff;
+        border-radius: 50%;
+    }
+
+
+}
+
+@media (max-width: 770px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    /* About */
+
+    .about__years {
+        margin-bottom: 100px;
+    }
+
+    .about__inner {
+        padding-left: 20px;
+    }
+
+    .about__text {
+        font-size: 13px;
+    }
+
+    /* Team */
+
+    .team__command {
+        flex-wrap: wrap;
+    }
+
+    /* Services */
+
+    .services__union {
+        flex-wrap: wrap;
+    }
+
+    .btn__services {
+        left: 35%;
+    }
+
+    /* Form */
+
+    .form {
+        max-width: 550px;
+        width: 100%;
+    }
+
+    .input,
+    .textarea {
+        max-width: 548px;
+        width: 100%;
+    }
+
+    .btn__full {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: 548px;
+        width: 100%;
+        
+    }
+}
+
+@media (max-width: 575px) {
+
+    /* Nav */
+
+    .nav {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .nav__link {
+        margin-bottom: 15px;
+    }
+
+    /* Intro */
+
+    .intro {
+        margin-top: 150px;
+    }
+
+    .intro__title {
+        font-size: 25px;
+    }
+
+    .intro__subtitle {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 20px 40px;
+    }
+
+    /* About */
+
+    .about__year {
+        text-align: center;
+    }
+
+    .about__years-left,
+    .about__years-right {
+        justify-content: center;
+    }
+
+    .about__year-2011:after,
+    .about__year-2012:after,
+    .about__year-2013:after,
+    .about__year-2014:after {
+        display: none;
+    }
+
+    .about__inner {
+        padding-right: 20px;
+    }
+
+    /* Section */
+
+    .section__title {
+        font-size: 25px;
+    }
+
+    .section__text {
+        font-size: 15px;
+    }
+
+    /* Team */
+
+    .team__item {
+        margin-bottom: 20px;
+    }
+
+    /* Services */
+
+    .services__item {
+        margin-bottom: 20px;
+    }
+
+    .services__title {
+        padding-top: 30px;
+    }
+
+    .services__name {
+        font-size: 22px;
+    }
+
+    .services__text {
+        font-size: 15px;
+    }
+
+    /* Contact */
+
+    .contact__union {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact__item {
+        margin-bottom: 20px;
+    }
+
+    .btn__full {
+        padding: 20px 0;
+    }
+
+}
 

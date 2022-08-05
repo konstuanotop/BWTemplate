@@ -191,24 +191,36 @@ h6 {
     background-color: #fff;
 }
 
-.about__years {
+.about-years {
     margin: 0 auto 200px;
 
     max-width: 950px;
+}
+
+.about-years__item {
+    display: flex;
+}
+
+.about-years__item--left {
+    justify-content: left;
+}
+
+.about-years__item--right {
+    justify-content: right;
 }
 
 .about__inner {
     max-width: 400px;
 }
 
-.about__years-left {
-    display: flex;
-    justify-content: left;
-}
+.about__year {
+    font-family: "Helvetica";
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 0.5;
+    color: #FEFEFE;
 
-.about__years-right {
-    display: flex;
-    justify-content: right;
+    margin-bottom: 25px;
 }
 
 .about__year-2011,
@@ -263,17 +275,6 @@ h6 {
     border-radius: 50%;
 }
 
-
-.about__year {
-    font-family: "Helvetica";
-    font-size: 48px;
-    font-weight: 300;
-    line-height: 0.5;
-    color: #FEFEFE;
-
-    margin-bottom: 25px;
-}
-
 .about__text {
     font-family: 'Montserrat', sans-serif;
 }
@@ -304,6 +305,10 @@ h6 {
     margin: 0 auto 320px;
 }
 
+.section {
+    margin-top: 90px;
+}
+
 .section__header {
     margin: 0 auto 120px;
 
@@ -329,11 +334,14 @@ h6 {
     color: #898888;
 }
 
-.section__text p {
+.section__text {
     margin: 0;
 }
 
 .team__command {
+    margin: 0;
+    padding-left: 0;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -345,6 +353,8 @@ h6 {
     max-width: 220px;
     width: 100%;
     text-align: center;
+
+    list-style-type: none;
 }
 
 .team__item:nth-child(2) {
@@ -398,18 +408,21 @@ h6 {
 
 /* Services */
 
-.services {
+.section-services {
     /*  margin: 250px auto; */
     margin: 0 auto;
+    padding-top: 45px;
+
     position: relative;
 
     background-color: #181818;
 }
 
-.services:before {
+.section-services:before {
     content: "";
     position: absolute;
-    top: -199px;
+    top: -200px;
+    left: 0;
 
     height: 200px;
     width: 100%;
@@ -423,6 +436,7 @@ h6 {
 
 
 .services__union {
+    margin: 0;
     margin-bottom: 50px;
 
     display: flex;
@@ -440,6 +454,8 @@ h6 {
     max-width: 335px;
     width: 100%;
     text-align: center;
+
+    list-style-type: none;
 }
 
 .services__icon {
@@ -760,7 +776,7 @@ h6 {
         padding-right: 0;
         max-width: 548px;
         width: 100%;
-        
+
     }
 }
 
@@ -772,6 +788,7 @@ h6 {
         margin-top: 30px;
         flex-direction: column;
     }
+
     .nav__link {
         margin-bottom: 15px;
     }
@@ -866,4 +883,3 @@ h6 {
     }
 
 }
-
